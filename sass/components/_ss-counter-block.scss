@@ -1,0 +1,51 @@
+.counter-block {
+    .row {
+        counter-reset: section;
+    }
+
+    &__item {
+        @include font-size(0.875rem);
+        line-height: 14.4px;
+        padding: 1rem;
+        // box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+        i {
+            color: $vivid-red-2;
+            @include font-size(3.5rem);
+            margin-bottom: 0.5rem;
+            display: inline-block;
+
+            @include media-breakpoint-up(lg) {
+                @include font-size(4rem);
+
+            }
+        }
+
+        h2 {
+            @include font-size(1.125rem);
+            font-weight: 700;
+            line-height: 21.6px;
+        }
+
+        &::before {
+            counter-increment: section;
+            content: counter(section, decimal-leading-zero);
+            @include font-size(4rem);
+            font-weight: 700;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            color: rgba(16, 16, 16, 0.08);
+
+            @include media-breakpoint-up(lg) {
+                @include font-size(4.25rem);
+            }
+
+            @include media-breakpoint-up(xl) {
+                @include font-size(6.25rem);
+            }
+        }
+    }
+}

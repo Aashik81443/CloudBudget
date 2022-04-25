@@ -1,0 +1,95 @@
+.site-footer {
+    background-color: #FAFAFA;
+
+    .row {
+        justify-content: space-between;
+        [class*='col-'] {
+            @include media-breakpoint-up(lg){
+                @include make-col(2.40);
+            }
+        }
+    }
+
+    &__address,
+    &__services,
+    &__contact,
+    &__support {
+        h3 {
+            @include font-size(1.125rem);
+            font-weight: 700;
+            text-transform: capitalize;
+            margin-bottom: 0.6rem;
+
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 2.3rem;
+            }
+        }
+    }
+
+    &__address {
+        a {
+            @include font-size(0.875rem);
+            line-height: 18px;
+            display: inline-block;
+            color: rgba(16, 16, 16, 1);
+            transition: all 0.3s;
+
+            &:focus,
+            &:hover {
+                color: $vivid-red-2;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__services {
+        ul {
+            padding-left: 0;
+
+            li {
+                list-style-type: none;
+                @include font-size(0.875rem);
+                line-height: 18px;
+                color: rgba(16, 16, 16, 1);
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    &__contact {
+        a {
+            @include font-size(0.875rem);
+            line-height: 26px;
+            display: flex;
+            color: rgba(16, 16, 16, 1);
+            transition: all 0.3s;
+
+            &:focus,
+            &:hover {
+                color: $vivid-red-2;
+                text-decoration: none;
+            }
+        }
+
+        ul {
+            padding-left: 0;
+            margin-top: 0.5rem;
+
+            li {
+                list-style-type: none;
+                display: inline-block;
+                padding-right: 0.5rem;
+
+                a {
+                    @include font-size(1.2rem);
+                }
+            }
+        }
+    }
+
+    .copyright{
+        @include font-size(0.875rem);
+        color: rgba(16, 16, 16, 1);
+
+    }
+}

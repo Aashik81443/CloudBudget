@@ -1,0 +1,80 @@
+//video
+.video {
+    &-content {
+        @include font-size(0.875rem);
+        line-height: 19.6px;
+        color: $black;
+        text-align: justify;
+
+        h2 {
+            text-align: left;
+        }
+
+        .learn-more {
+            @include font-size(0.875rem);
+            color: $vivid-red-2;
+
+            &:focus,
+            &:hover{
+                text-decoration: none;
+                color: $strong-red;
+            }
+        }
+    }
+}
+
+//features
+.features {
+    background-color: #FAFAFA;
+}
+
+//stay-focused
+.stay-focused {
+    background-color: $vivid-red-2;
+
+    &__media {
+        img {
+            border-radius: 8px;
+        }
+    }
+
+    &__content {
+        color: $white;
+        @include font-size(0.875rem);
+        line-height: 19.6px;
+    }
+
+    .link {
+        ul {
+            padding-left: 0;
+
+            li {
+                display: inline-block;
+                list-style-type: none;
+                padding-right: 1rem;
+
+                a {
+                    color: $white;
+                    @include font-size(1.3rem);
+                    transition: all 0.3s;
+                    display: inline-block;
+
+                    &:focus,
+                    &:hover{
+                        text-decoration: none;
+                        transform: scale(1.5);
+                    }
+                }
+            }
+        }
+    }
+}
+
+//contact
+.contact {
+    &-content {
+        @include font-size(0.875rem);
+        line-height: 19.6px;
+        color: $black;
+    }
+}

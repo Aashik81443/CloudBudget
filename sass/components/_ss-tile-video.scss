@@ -1,0 +1,45 @@
+.tile-video {
+
+    &__img {
+        position: relative;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: $vivid-red-2;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        border-radius: 50%;
+        line-height: 1;
+        
+
+        @include media-breakpoint-up(lg) {
+            height: 60px;
+            width: 60px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -18px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            height: 66px;
+            width: 66px;
+        }
+
+        &:focus,
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}

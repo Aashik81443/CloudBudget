@@ -1,0 +1,60 @@
+//banner
+.banner {
+
+    @include media-breakpoint-down(md) {
+        margin-top: 4.1rem;
+    }
+
+    &-content {
+        @include font-size(1rem);
+        padding: 1rem;
+        line-height: 36px;
+        font-weight: 600;
+        max-width: 578px;
+        margin: 0 auto;
+        text-align: center;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        // @include media-breakpoint-up(lg) {
+        // }
+        min-height: 400px;
+
+        @include media-breakpoint-up(md) {
+            min-height: 520px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            min-height: 565px;
+            @include font-size(1.5rem)
+        }
+
+        @include media-breakpoint-up(xl) {
+            min-height: 900px;
+        }
+
+        h1 {
+            font-weight: 700;
+            text-transform: uppercase;
+            @include font-size(2.5rem);
+            margin-bottom: 2rem;
+
+
+            @include media-breakpoint-up(md) {
+                @include font-size(3rem)
+            }
+
+            @include media-breakpoint-up(lg) {
+                @include font-size(3.5rem);
+                margin-bottom: 2.5rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                @include font-size(4.5rem)
+            }
+        }
+    }
+}

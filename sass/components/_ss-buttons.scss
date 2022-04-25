@@ -1,0 +1,76 @@
+.btn-primary {
+    @include font-size(0.875rem);
+    font-weight: 600;
+    line-height: 17px;
+    text-transform: uppercase;
+    min-width: 150px;
+    padding: 0.7rem;
+    border: 1px solid $vivid-red-2;
+    color: $vivid-red-2;
+    background-color: $white;
+    transition: all 0.3s;
+
+
+    @include media-breakpoint-up(lg) {
+        min-width: 150px;
+        padding: 0.8rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        min-width: 160px;
+        padding: 0.9688rem 0.8rem;
+    }
+
+    &:focus,
+    &:hover {
+        color: $white;
+        background-color: $vivid-red-2;
+        border-color: $white;
+    }
+
+    &--alt {
+        border: 1px solid transparent;
+        color: $white;
+        background-color: $vivid-red-2;
+
+        &:focus,
+        &:hover {
+            color: $vivid-red-2;
+            background-color: $white;
+            border-color: $vivid-red-2;
+        }
+    }
+}
+
+.btn-sm {
+    @include font-size(0.875rem);
+    font-weight: 600;
+    line-height: 17px;
+    text-transform: uppercase;
+    min-width: 150px;
+    padding: 0.5rem;
+    border: 1px solid $white;
+    color: $white;
+    background-color: transparent;
+    transition: all 0.3s;
+
+    @include media-breakpoint-down(md) {
+        color: $white;
+        background-color: $vivid-red-2;
+        border-color: $vivid-red-2;
+
+    }
+
+    @include media-breakpoint-up(lg) {
+        min-width: 100px;
+        padding: 0.6688rem;
+    }
+
+    &:focus,
+    &:hover {
+        color: $vivid-red-2;
+        background-color: $white;
+        border-color: $vivid-red-2;
+        
+    }
+}
