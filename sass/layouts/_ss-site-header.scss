@@ -11,7 +11,7 @@
         &-nav {
             .nav-item {
                 @include media-breakpoint-down(md) {
-                    background-color: $vivid-red-2;
+                    background: linear-gradient(90deg, rgba(213, 32, 71, 1) 0%, rgba(238, 61, 27, 1) 100%);
                     text-align: center;
                     border-bottom: 1px solid $white;
                 }

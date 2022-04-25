@@ -11822,7 +11822,7 @@ iframe {
 
 @media (max-width: 991.98px) {
   .site-header .navbar-nav .nav-item {
-    background-color: #ED4C5C;
+    background: linear-gradient(90deg, #d52047 0%, #ee3d1b 100%);
     text-align: center;
     border-bottom: 1px solid #fff;
   }
