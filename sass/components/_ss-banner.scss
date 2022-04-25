@@ -1,9 +1,6 @@
 //banner
 .banner {
-
-    @include media-breakpoint-down(md) {
-        margin-top: 4.1rem;
-    }
+    margin-top: 4.1rem;
 
     &-content {
         @include font-size(1rem);

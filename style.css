@@ -11559,10 +11559,8 @@ iframe {
   margin-left: 15px;
 }
 
-@media (max-width: 991.98px) {
-  .banner {
-    margin-top: 4.1rem;
-  }
+.banner {
+  margin-top: 4.1rem;
 }
 
 .banner-content {
